@@ -1,4 +1,4 @@
-import ColorChangeApp from './ColorChangeApp';
+import ChatAndComment from './ChatAndComment';
 
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
@@ -11,7 +11,7 @@ export default function App() {
     <View style={styles.container}>
 
 
-<ColorChangeApp/>
+<ChatAndComment/>
 
     
       <StatusBar style="auto" />
