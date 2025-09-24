@@ -13,7 +13,6 @@ export default function App() {
 
 <Counterapp/>
 
-
     
       <StatusBar style="auto" />
     </View>
