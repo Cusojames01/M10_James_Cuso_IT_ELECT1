@@ -1,4 +1,4 @@
-import Counterapp from './Counterapp';
+import ColorChangeApp from './ColorChangeApp';
 
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
@@ -11,7 +11,7 @@ export default function App() {
     <View style={styles.container}>
 
 
-<Counterapp/>
+<ColorChangeApp/>
 
     
       <StatusBar style="auto" />
