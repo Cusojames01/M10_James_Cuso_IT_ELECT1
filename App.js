@@ -1,5 +1,6 @@
 import ColorChangeApp from './ColorChangeApp';
 
+import Counterapp from './Counterapp';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
@@ -10,7 +11,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-
+<Counterapp/>
 <ColorChangeApp/>
 
     
