@@ -1,28 +1,21 @@
-import Counterapp from './Counterapp';
 
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-
+import React from "react";
+import { KeyboardAvoidingView, Platform,Image,ScrollView } from "react-native";
+import BubbleChat from "./BubbleChat";
+import CommentSect from "./CommentSect";
 
 export default function App() {
-
   return (
-    <View style={styles.container}>
-  <Counterapp />
-
-
     
-      <StatusBar style="auto" />
-    </View>
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+    
+
+      <BubbleChat/>
+      <CommentSect/>
+    </KeyboardAvoidingView>
+  
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
